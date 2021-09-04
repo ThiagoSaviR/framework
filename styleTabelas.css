@@ -1,0 +1,15 @@
+* {
+    padding: 0px;
+    margin: 0;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+}
+body{
+    background-color: rgba(95, 52, 115);
+}
+
+.cabecalho{
+    text-align: center;
+    margin: 100px; 
+}
