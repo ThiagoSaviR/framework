@@ -12,26 +12,23 @@ function createRow(user){
     let tdUserId = document.createElement("td"); //Cria coluna
     let tdId = document.createElement("td");
     let tdTitle = document.createElement("td");
-    let tdCompleted = document.createElement("td");
 
     tdUserId.innerHTML = user.userId;
     tdId.innerHTML = user.id;
     tdTitle.innerHTML = user.title;
-    tdCompleted.innerHTML = user.completed;
 
     row.appendChild(tdUserId); //Adiciona na tabela.
     row.appendChild(tdId);
     row.appendChild(tdTitle);
-    row.appendChild(tdCompleted);
 
     return row;
 }
 
-let data = makeGet("https://jsonplaceholder.typicode.com/todos"); //Puxa a API e guarda na variável.
+let data = makeGet("https://jsonplaceholder.typicode.com/albums"); //Puxa a API e guarda na variável.
 
 function main() { //Função que puxa a API.
     let posts = JSON.parse(data); //Converte a String para JSON.
-    let table = document.getElementById("todos"); //Pega a ID post do HTML
+    let table = document.getElementById("albuns"); //Pega a ID post do HTML
     
     posts.forEach(element => { //Para cada usuário cria uma linha e adiciona na tabela.
         let row = createRow(element);

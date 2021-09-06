@@ -26,9 +26,9 @@ function createRow(user){
 
     return row;
 }
+let data = makeGet("https://jsonplaceholder.typicode.com/posts"); //Puxa a API e guarda na variável.
 
 function main() { //Função que puxa a API.
-    let data = makeGet("https://jsonplaceholder.typicode.com/posts"); 
     let posts = JSON.parse(data); //Converte a String para JSON.
     let table = document.getElementById("post"); //Pega a ID post do HTML
     
