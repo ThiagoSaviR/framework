@@ -1,3 +1,4 @@
+/*RESET*/
 * {
     padding: 0px;
     margin: 0;
@@ -6,24 +7,25 @@
     text-align: center;
     font-family: 'Press Start 2P', cursive;
 }
+/*COR DE FUNDO*/
 body{
     background-color: rgba(95, 52, 115);
 }
-
+/*IMAGEM*/
 .cabecalho{
     text-align: center;
     margin: 100px; 
 }
 
+/*NAVEGAÇÃO DO MENU*/
 .menu{
+    background: rgb(46, 46, 54);
     width: 600px;
     height: 480px;
-    background: rgb(46, 46, 54, 0.8);
     border: 3px solid;
     border-image: linear-gradient(135deg,rgb(126, 102, 236) 0%,rgb(255, 0, 168), rgb(126, 102, 236) 100%) 1;
     margin: auto;
     box-shadow: -5px 5px 20px rgb(186, 79, 228), 5px -5px 20px rgb(186, 79, 228);
-
 }
 .botoes{
     display: flex;

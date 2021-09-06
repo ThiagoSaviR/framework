@@ -1,3 +1,4 @@
+/*RESET*/
 * {
     padding: 0px;
     margin: 0;
@@ -7,29 +8,21 @@
     text-align: center;
     font-family: 'Press Start 2P', cursive;
 }
+/*COR DE FUNDO*/
 body{
     background-color: rgba(95, 52, 115);
 }
-
+/*IMAGEM*/
 .cabecalho{
     text-align: center;
     margin: 100px;
     margin-bottom: 20px; 
 }
+/*BOTÕES*/
 .botao-pesquisa{
     display:flex;
     flex-direction: column;
     align-items: center;
-}
-
-.pesquisa{
-    width: 500px;
-    font-size: 13px;
-    padding: 15px;
-    border-radius: 15px;
-    margin: 20px;
-    background-color: rgb(247, 195, 247);
-    box-shadow: -3px 3px 15px rgb(186, 79, 228), 3px -3px 15px rgb(186, 79, 228);
 }
 
 .btn{
@@ -48,6 +41,7 @@ body{
     box-shadow: -3px 3px 15px rgb(186, 79, 228), 3px -3px 15px rgb(186, 79, 228);
 }
 
+/*TABELA*/
 .tabela{
     display:flow-root;
     width: 800px;
@@ -61,11 +55,7 @@ body{
     overflow-y: scroll;
 }  
 
-.albuns{
-    width: 600px;
-}
-
-.todos{
+.albuns, .todos{
     width: 600px;
 }
 
@@ -84,3 +74,20 @@ body{
     border: 1px solid rgb(160, 88, 150);
     text-align:center;
 } 
+
+/*cAMPO DE PESQUISA*/
+.pesquisa{
+    width: 770px;
+    text-align: left;
+    font-size: 13px;
+    padding: 12px;
+    color:#727272;
+    margin: 20px;
+    margin-bottom: 5px;
+    background-color: #f3f3f3;
+    box-shadow: -3px 3px 15px rgb(186, 79, 228), 3px -3px 15px rgb(186, 79, 228);
+}
+
+.pesquisa-albuns, .pesquisa-todos{
+    width: 575px;
+}
